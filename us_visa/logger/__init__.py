@@ -10,6 +10,8 @@ log_dir = 'logs'
 
 logs_path = os.path.join(from_root(), log_dir, LOG_FILE)
 
+
+
 os.makedirs(log_dir, exist_ok=True)
 
 
@@ -18,3 +20,4 @@ logging.basicConfig(
     format="[ %(asctime)s ] %(name)s - %(levelname)s - %(message)s",
     level=logging.DEBUG,
 )
+
