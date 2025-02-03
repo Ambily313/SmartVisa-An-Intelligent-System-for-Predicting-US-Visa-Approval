@@ -5,5 +5,8 @@ matplotlib
 plotly
 seaborn
 scipy
-
+scikit-learn
+imblearn
+xgboost
+catboost
 # -e .
