@@ -12,5 +12,6 @@ catboost
 python-dotenv
 pymongo
 from_root
+certifi
 
 -e.
