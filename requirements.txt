@@ -11,5 +11,6 @@ xgboost
 catboost
 python-dotenv
 pymongo
+from_root
 
 -e.
