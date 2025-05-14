@@ -10,5 +10,6 @@ imblearn
 xgboost
 catboost
 python-dotenv
+pymongo
 
 # -e.
