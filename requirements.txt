@@ -1,11 +1,11 @@
 ipykernel
-numpy
+numpy==1.24.4
 pandas
+scikit-learn
 matplotlib
 seaborn
 plotly
 scipy
-scikit-learn
 imblearn
 xgboost
 catboost
@@ -13,5 +13,7 @@ python-dotenv
 pymongo
 from_root
 certifi
-
+evidently==0.4.1
+dill
+PyYAML
 -e.
