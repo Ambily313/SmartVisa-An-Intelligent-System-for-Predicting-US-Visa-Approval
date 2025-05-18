@@ -34,7 +34,7 @@ To predict whether a US visa application will be **approved or denied** based on
 
 ### ✔ Major Components
 
-1. **Add Data to MongoDB** – Store raw data in a NoSQL database for scalability.
+1. **Add Data to MongoDB** – Store preprocessed data in a NoSQL database for scalability.
 2. **Folder Structure** – Organize codebase into modular components for reusability and maintainability.
 3. **Custom Logging & Exception Handling** – Implement centralized logging and exception tracking.
 4. **MongoDB Integration** – Use MongoDB for storing and querying datasets.
@@ -42,9 +42,8 @@ To predict whether a US visa application will be **approved or denied** based on
 6. **Evidently Integration** – Profile the data to track distribution shifts and schema drift.
 7. **Data Validation** – Validate schema, nulls, and data types to ensure clean input.
 8. **Data Transformation** – Encode categorical features, scale numerical columns, and prepare train-test splits.
-9. **Model Training** – Train models like Logistic Regression, Random Forest, XGBoost, and CatBoost.
-10. **AWS Connection** – Connect and push artifacts to AWS S3.
-11. **Model Evaluation** – Compare model metrics (accuracy, precision, recall, F1-score) and select the best model.
+9. **Model Training** – Train models like KNN, Random Forest and  XGBoost.
+11. **Model Evaluation** – Compare model metrics (accuracy, precision, recall, ) and select the best model.
 12. **Model Pusher** – Save and push the final trained model to S3 for deployment.
 13. **Training Pipeline** – Orchestrate the entire training workflow automatically.
 14. **Prediction Pipeline** – Load saved model and predict on real-time user inputs.
