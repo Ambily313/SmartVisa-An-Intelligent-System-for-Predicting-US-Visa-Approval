@@ -1,0 +1,74 @@
+grid_search:
+  class: GridSearchCV
+  module: sklearn.model_selection
+  params:
+    cv: 3
+    verbose: 3
+model_selection:
+  module_0:
+    class: KNeighborsClassifier
+    module: sklearn.neighbors
+    params:
+      algorithm: kd_tree
+      weights: uniform
+      n_neighbors: 3
+    search_param_grid:
+      algorithm:
+      - auto
+      - ball_tree
+      - kd_tree
+      - brute
+      weights:
+      - uniform
+      - distance
+      n_neighbors:
+      - 3
+      - 5
+      - 9
+
+      
+  module_1:
+    class: RandomForestClassifier
+    module: sklearn.ensemble
+    params:
+      max_depth: 10
+      max_features: sqrt
+      n_estimators: 3
+    search_param_grid:
+      max_depth:
+      - 10
+      - 15
+      - 20
+      max_features:
+      - sqrt
+      - log2
+      n_estimators:
+      - 3
+      - 5
+      - 9
+
+  module_2:
+    class: XGBClassifier
+    module: xgboost
+    params:
+      n_estimators: 200
+      learning_rate: 0.1
+      subsample: 0.8
+      colsample_bytree: 0.8
+    search_param_grid:
+      n_estimators:
+      - 150
+      - 200
+      - 250
+      max_depth:
+      - 3
+      - 5
+      - 7
+      learning_rate:
+      - 0.01
+      - 0.1
+      - 0.2
+      gamma:
+      - 0
+      - 0.1
+      - 0.2

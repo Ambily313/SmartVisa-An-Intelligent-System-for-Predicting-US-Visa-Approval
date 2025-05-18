@@ -16,4 +16,5 @@ certifi
 evidently==0.4.1
 dill
 PyYAML
+neuro_mf
 -e.
