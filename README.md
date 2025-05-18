@@ -56,7 +56,7 @@ To predict whether a US visa application will be **approved or denied** based on
 - **Containerization**: Dockerized for portability
 - **Cloud**: AWS EC2 (App Hosting), AWS S3 (Model Storage)
 - **CI/CD**: GitHub Actions with YAML workflows and self-hosted runners for automation
-- **Web Framework**: Flask for RESTful API deployment
+- **Web Framework**: FastAPI for RESTful API deployment
 
 ---
 
@@ -66,7 +66,7 @@ To predict whether a US visa application will be **approved or denied** based on
 |---------|-------|
 | Language | Python |
 | ML Libraries | Pandas, Scikit-learn, XGBoost, CatBoost, Matplotlib |
-| Deployment | Flask, Docker |
+| Deployment | FastAPI, Docker |
 | Cloud | AWS EC2, AWS S3 |
 | Automation | GitHub Actions |
 | Database | MongoDB |
@@ -81,9 +81,35 @@ MongoDB → Data Ingestion → Validation → Transformation
 → Model Training → Evaluation → Pusher → AWS S3
 → Training & Prediction Pipelines → Frontend App → AWS EC2
 
+## 📁 Folder Structure
+
+```
+SmartVisa/
+├── config/
+├── notebooks/
+├── us_visa/
+│   ├── cloud_storage/
+│   ├── components/
+│   ├── configuration/
+│   ├── constants/
+│   ├── data_access/
+│   ├── entity/
+│   ├── exceptions/
+│   ├── logger/
+│   ├── pipeline/
+│   ├── utils/
+│   └── __init__.py
+├── .gitignore
+├── LICENSE
+├── README.md
+├── demo.py
+```
+
+
+
 ## 📝 Future Improvements
 
-- Integration with advanced deep learning models (e.g., LSTM or Transformer-based for time-aware features)
+- Integration with advanced deep learning models .
 - Real-time monitoring and feedback system
 - Enhanced dataset with more diverse features
 - API Gateway integration for mobile app consumption
